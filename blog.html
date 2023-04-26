@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+   
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "style.css"> <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <style>
+     
+
+.card{
+   background: #fff;
+    box-shadow:  rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow:  rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+    </style>
+</head>
+<body>
+     <!-- navbar -->
+     <nav class = "navbar navbar-expand-lg navbar-light bg-white py-2 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/shopping-bag-icon.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">IERIX</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative"  id="item-cart">
+                    <i class = "fa fa-shopping-cart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle bg-primary text-danger">5</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "/index.html">home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#collection">collection</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#special">specials</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#blogs">blogs</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "/about.html">about us</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#popular">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+
+   <!-- header -->
+ 
+    <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px; background: url(images/blogpage1\ \(1\).jpg) top/cover no-repeat; ">
+        <div class="container">
+            <div class=" row">
+        <div class = "container h-100 d-flex align-items-center carousel-inner">
+            <div class = "text-center mt-5 carousel-item active">
+                <h1 class = " mt-5 text-capitalize text-white">Welcome to our</h1>
+ <h1 class = "text-uppercase py-2 fw-bold text-danger">Blogs</h1>
+                <a href = "/index.html" class = "btn mt-3 text-uppercase">shop now</a>
+            </div>
+           
+        </div>
+    </div>
+</div>
+</header>
+
+
+ <!-- blogs -->
+<div class="container">
+    <div class="row">
+        <section id = "blogs" class = "py-5">
+            <div class = "container-fluid">
+                <div class = "title text-center py-5">
+                    <h2 class = "position-relative d-inline-block">Our Latest Blog</h2>
+                </div>
+    
+                <div class = "row g-3">
+
+                    <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                        <img src = "images/blogpage1 (3).jpg" alt = "" class="rounded">
+                        <div class = "card-body px-0">
+                            <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                            <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                            <p class = "card-text">
+                                <small class = "text-muted">
+                                    <span class = "fw-bold">Author: </span>John Doe
+                                </small>
+                            </p>
+                            <a href = "/blog.html" class = "btn fw-bold">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                        <img src = "images/blogpage1 (1).jpg" alt = "" class="rounded">
+                        <div class = "card-body px-0">
+                            <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                            <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                            <p class = "card-text">
+                                <small class = "text-muted">
+                                    <span class = "fw-bold">Author: </span>John Doe
+                                </small>
+                            </p>
+                            <a href = "/blog.html" class = "btn fw-bold">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                        <img src = "images/blogpage1 (5).jpg" alt = "" class="rounded">
+                        <div class = "card-body px-0">
+                            <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                            <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                            <p class = "card-text">
+                                <small class = "text-muted">
+                                    <span class = "fw-bold">Author: </span>John Doe
+                                </small>
+                            </p>
+                            <a href = "/blog.html" class = "btn fw-bold">Read More</a>
+                        </div>
+                    </div>
+
+
+                    <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                        <img src = "images/blog_1.jpg" alt = "" class="rounded">
+                        <div class = "card-body px-0">
+                            <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                            <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                            <p class = "card-text">
+                                <small class = "text-muted">
+                                    <span class = "fw-bold">Author: </span>John Doe
+                                </small>
+                            </p>
+                            <a href = "/blog.html" class = "btn fw-bold">Read More</a>
+                        </div>
+                    </div>
+    
+                    <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                        <img src = "images/blog_2.jpg" alt = "" class="rounded">
+                        <div class = "card-body px-0">
+                            <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                            <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                            <p class = "card-text">
+                                <small class = "text-muted">
+                                    <span class = "fw-bold">Author: </span>John Doe
+                                </small>
+                            </p>
+                            <a href = "/blog.html" class = "btn fw-bold">Read More</a>
+                        </div>
+                    </div>
+    
+                    <div class = "card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                        <img src = "images/blog_3.jpg" alt = "" class="rounded">
+                        <div class = "card-body px-0">
+                            <h4 class = "card-title">Lorem ipsum, dolor sit amet consectetur adipisicing</h4>
+                            <p class = "card-text mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aspernatur repudiandae nostrum dolorem molestias odio. Sit fugit adipisci omnis quia itaque ratione iusto sapiente reiciendis, numquam officiis aliquid ipsam fuga.</p>
+                            <p class = "card-text">
+                                <small class = "text-muted">
+                                    <span class = "fw-bold">Author: </span>John Doe
+                                </small>
+                            </p>
+                            <a href = "/blog.html" class = "btn fw-bold">Read More</a>
+                        </div>
+                    </div>
+
+               
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+ <!-- footer -->
+ <footer class = "bg-dark py-5">
+    <div class = "container">
+        <div class = "row text-white g-4">
+            <div class = "col-md-6 col-lg-3">
+                <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">IERIX</a>
+                <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light">Links</h5>
+                <ul class = "list-unstyled">
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Collection
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Blogs
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "#" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> About Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Contact Us</h5>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-map-marked-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                      Ram maruti road near Thane station
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span class = "fw-light">
+                        ierix.@gmail.com
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-phone-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        +9876543210
+                    </span>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Follow Us</h5>
+                <div>
+                    <ul class = "list-unstyled d-flex">
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of footer -->
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
