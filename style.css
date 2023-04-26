@@ -181,6 +181,15 @@ footer a:hover{
     }
 }
 
+  @media only screen and (max-width: 426px) {
+.input-number,.main{
+  width: 100%;
+}
+.counter,.des{
+  text-align: center;
+}
+}
+
 .card{
     background: #fff;
      box-shadow:  rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
