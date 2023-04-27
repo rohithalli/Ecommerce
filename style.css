@@ -115,7 +115,7 @@ body{
 
 /* offers */
 #offers{
-    background: url(../images/winterclothes.jpg) center/cover no-repeat;
+    background: url(./images/winterclothes.jpg) center/cover no-repeat;
 }
 #offers .row{
     min-height: 60vh;
